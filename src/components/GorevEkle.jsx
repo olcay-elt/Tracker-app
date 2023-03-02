@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 
 const GorevEkle = ({ tasks, setTasks }) => {
+    // let now = new Date().toISOString()
     const [taskname, setTaskname] = useState('')
-    const [taskdate, setTaskdate] = useState(new Date().toISOString())
+    // const [taskdate, setTaskdate] = useState(now.split(':')[0] + ':' + now.split(':')[1])
+    const [taskdate, setTaskdate] = useState('')
 
     const Submit = (e) => {
         e.preventDefault();

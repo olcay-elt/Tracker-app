@@ -7,8 +7,8 @@ const GorevleriGoster = ({ tasks, setTasks }) => {
                 tasks.map((task, i) => (
                     <div className={
                         task.isDone ?
-                            'btn btn-secondary d-block mb-3 done' :
-                            'btn btn-secondary d-block mb-3'
+                            'btn d-block mb-3 done' :
+                            'btn d-block mb-3'
                     } key={i} onClick={() => setTasks(tasks.map((item, k) => i === k ? { ...item, isDone: !item.isDone } : item))}>
 
                         {task.text}

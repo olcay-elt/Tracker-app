@@ -1,7 +1,7 @@
 import GorevEkle from '../components/GorevEkle'
 import GorevleriGoster from '../components/GorevleriGoster'
 import { useState } from "react";
-import mockTasks from "../helper/Data"
+import mockTasks from "../helper/MockTasks"
 import Header from '../components/Header';
 
 const Home = () => {
